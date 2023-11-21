@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+   <h1>Imagem dinâmica</h1> 
+   <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente <br> aumente e diminua o tamanho do seu navegador</p>
+   <picture>
+    <source media="(max-width: 750px)" srcset="imagens2/imagem-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens2/imagem-m.png" type="image/png">
+    <img src="imagens2/imagem-g.png" alt="Imagem flexível">
+   </picture>
+
+   <h1>Reproduzindo áudio</h1>
+   <p>Vamos aprender a reproduzir áudio em HTML5</p>
+   <audio preload="metadata" autoplay controls loop>
+      <source src="midia/Violão tom C.m4a" type="audio/mpeg">
+      <source src="midia/Violão tom C.ogg" type="audio/ogg">
+      <source src="midia/Violão tom C.wav" type="audio/wav">
+      <p>Infelizmente não conseguimos reproduzir o áudio.</p>
+   </audio>
+
+   <h1>Colocando vídeo em um site</h1>
+   <h2>Vídeo hospedado no próprio servidor do site</h2>
+   <video width="560" poster="" controls autoplay>
+      <source src="midia/06 - video Paisagem [1280X720px] mp4.mp4" type="video/mp4">
+      <source src="midia/07 - video Paisagem [1280X720px] webm.webm" type="video/webm">
+      <source src="midia/05 - video Paisagem [1280X720px] mkv.mkv" type="video/mkv">
+      <p>Infelizmente não foi possível carregar o vídeo. Seu navegador não suporta.</p>
+   </video>
+   <h2>Inserindo vídeo do YouTube</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/NDReTjWgCwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

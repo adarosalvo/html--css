@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: linear-gradient(to bottom, #FFCB9A, #D8B08C);
+}
+main {
+    background-color: white; /*Fundo branco para os textos*/
+    border-radius: 10px; /*Borda arredondada do fundo branco*/
+    box-shadow: 5px 5px 15px #ae8d71a7;  /*Sombra do fundo branco, o primeiro parâmetro é o quanto a sombra vai para o lado, o segundo para baixo e o terceiro quanto ela espalha. Por último colocamos a cor e transparência.*/
+    width: 600px; /*Tamanho do fundo branco com os textos*/
+    padding: 10px; /*Espaço do texto para a margem*/
+    margin: auto /*O fundo branco com os textos fica centralizado*/
+}
+h1 {
+    color: #fdd140;
+    text-align: center; /*O título h1 fica centralizado*/
+    text-shadow: 1px 1px 1px #997e278a; /*Sombra do h1, o primeiro parâmetro é o quanto a sombra vai para o lado, o segundo para baixo e o terceiro quanto ela espalha. Por último colocamos a cor e transparência.*/
+}
+h2 {
+    color: #0F6466;
+    text-shadow: 1px 1px 1px #0a42438a; /*Sombra do h2, o primeiro parâmetro é o quanto a sombra vai para o lado, o segundo para baixo e o terceiro quanto ela espalha. Por último colocamos a cor e transparência.*/
+}
+p {
+    text-align: justify;
+}
