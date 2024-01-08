@@ -16,10 +16,22 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        /*
+        nth-child(odd) =  O odd (ou 2n-1) faz com que as linhas ímpares fiquem com a configuração desejada, neste caso foi o background color lightgray... O even (ou 2n = a configuração será a cada duas linhas) faz com que as linhas pares fiquem com a configuração desejada... Eu posso configurar as ímapes de uma cor e as pares de outra.
+        */
         td.num {
             text-align: right;
         }
@@ -33,27 +45,32 @@
 
       TABLE (table)
 
+        CAPTION (caption) = Legenda da tabela (Não tem tr, th e td)
+
         THEAD (thead) = Cabeça da tabela
           TABLE ROW (tr) = Linha de tabela
-            TABLE HEADER (th)= Cabeçalho de tabela
+            TABLE HEADER (th)= Cabeçalho de tabela (título)
             TABLE DATA (td)= Dado de tabela
 
         TBODY (tbody) = Corpo da tabela
           TABLE ROW (tr) = Linha de tabela
-            TABLE HEADER (th)= Cabeçalho de tabela
+            TABLE HEADER (th)= Cabeçalho de tabela (título)
             TABLE DATA (td)= Dado de tabela  
 
         TFOOT (tfoot) = pés da tabela ou rodapé
           TABLE ROW (tr) = Linha de tabela
-            TABLE HEADER (th)= Cabeçalho de tabela
+            TABLE HEADER (th)= Cabeçalho de tabela (título)
             TABLE DATA (td)= Dado de tabela
     Obs: A cabeça, o corpo e o pé da tabela podem ter as propriedades tr, th e td
+
+    A tag SCOPE diz aonde os dados do elemento (título se encontram). Caso o dado se encontre na coluna eu uso o "col", saso se encontre na linha eu uso o "row".
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -168,7 +185,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
