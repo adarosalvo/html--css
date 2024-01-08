@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -25,6 +26,11 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         tbody > tr:nth-child(odd) {
             background-color: lightgray;
@@ -64,13 +70,19 @@
     Obs: A cabeça, o corpo e o pé da tabela podem ter as propriedades tr, th e td
 
     A tag SCOPE diz aonde os dados do elemento (título se encontram). Caso o dado se encontre na coluna eu uso o "col", saso se encontre na linha eu uso o "row".
+
+    Para deixar o cabeçalho da tabela fixo eu preciso colocar a position relative no table e colocar essa configuração no style: 
+    thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
     -->
     <table>
         <caption>População das unidades federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
