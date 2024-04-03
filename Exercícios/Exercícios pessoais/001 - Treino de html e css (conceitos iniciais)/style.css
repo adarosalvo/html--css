@@ -1,22 +1,37 @@
-@charset "UTF-";
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'roboto';
+    src: url('arquivos/fonts/Roboto-Medium.ttf') format('truetype');
+    font: normal normal;
+}
+
 body {
     background-image: linear-gradient(to right, rgb(175, 175, 175), rgb(190, 190, 190), rgb(216, 216, 216), rgb(244, 243, 243));
     color: black;
-    font: italic bold 12px Arial, Helvetica, sans-serif;
+    font: italic 16px 'roboto', Helvetica, sans-serif;
 }
 
 mark {
     background-color: cadetblue;
 }
+
 .centro {
     text-align: center;
 }
+
 .esquerda {
     text-align: left;
 }
+
 .direita {
     text-align: right;
 }
+
 .justificado {
+    text-align: justify;
+}
+
+.fontegf  {
     text-align: justify;
 }
