@@ -124,10 +124,15 @@
 
      <p><a href="http://www.relevantz.com.br" hreflang="pt-br" target="_blank" rel="external">Acesse o site do curso Relevantz</a></p>
 
-     <p><a href="http://www.scowls.com" hreflang="pt-br" target="_blank" rel="external"></a></p>
+     <p><a href="http://www.w3schools.com" hreflang="en" target="_blank" rel="external">Acesse o site w3schools</a></p>
+
 
      <h2>Links para download</h2>
-     <a href="arquivos/Código inicial.png" download="Código inicial.png" type="aplication/pdf" target="_blank">Para baixar a imagem clique aqui</a>
+     <p><a href="arquivos/Código inicial.png" download="Código inicial.png" type="image/png" target="_blank">Para baixar a imagem clique aqui</a></p>
+
+     <p><a href="arquivos/imagem-g.png" download="imagem-g.png" target="_blank" type="image/png">Para baixar a imagem clique aqui</a></p>
+
+     
 
      <h2>Colocando imagens no site (Imagens flexíveis)</h2>
      <picture>
@@ -136,7 +141,18 @@
         <img src="arquivos/imagem-g.png" alt="Imagem flexível">
      </picture>
 
+     <picture>
+        <source media="(max-width: 750px)" srcset="arquivos/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="arquivos/imagem-m.png" type="image/png">
+        <img src="arquivos/imagem-g.png" alt="Imagem flexível">
+     </picture>
+
      <h2>Colocando áudio no site</h2>
+     <audio  preload="matadata" controls loop autoplay>
+        <source src="arquivos/violão tom C.m4a" type="audio/mpeg">
+        <p>Seu navegador não suporta o áudio, <a href="arquivos/violão tom C.m4a" download="violão tom C.m4a" type="audio/mpeg" target="_blank"></a> baixe-o aqui.</p>
+     </audio>
+     
      
 
   
