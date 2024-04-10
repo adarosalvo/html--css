@@ -50,4 +50,35 @@ mark {
     font: bold 20px 'roboto', Helvetica, sans-serif;
 }
 
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.especial::hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.especial::before {
+    content: '>>';
+    font-weight: lighter;
+}
+
+.especial::after {
+    content: '<<';
+    font-weight: lighter;
+}
+
+
 
