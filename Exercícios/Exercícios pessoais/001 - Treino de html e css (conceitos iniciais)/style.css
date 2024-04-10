@@ -37,3 +37,9 @@ mark {
 .fontegf  {
     font-family: "Cinzel Decorative", serif;
 }
+
+.class {
+    background-image: linear-gradient(to right, rgb(75, 75, 244), rgb(126, 126, 252), rgb(169, 169, 251));
+    color: black;
+    font: italic 16px 'roboto', Helvetica, sans-serif;
+}
