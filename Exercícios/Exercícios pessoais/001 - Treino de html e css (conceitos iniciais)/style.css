@@ -80,5 +80,14 @@ a:hover {
     font-weight: lighter;
 }
 
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    background-color: yellow;
+}
+
 
 
